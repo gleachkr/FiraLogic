@@ -22,7 +22,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1441835615
-ModificationTime: 1511390043
+ModificationTime: 1511645764
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -308,7 +308,7 @@ NameList: AGL For New Fonts
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 8381 29 12
+WinInfo: 8700 29 12
 BeginPrivate: 10
 BlueValues 31 [-13 0 527 540 689 702 739 752]
 OtherBlues 11 [-213 -200]
@@ -322,7 +322,7 @@ StemSnapH 4 [69]
 StemSnapV 4 [84]
 EndPrivate
 AnchorClass2: "Anchor-0" "'mark' Mark Positioning in Latin lookup 0 subtable" "Anchor-1" "'mark' Mark Positioning in Latin lookup 0 subtable" "Anchor-2" "'mark' Mark Positioning in Latin lookup 1 subtable" "Anchor-3" "'mark' Mark Positioning in Latin lookup 1 subtable" "Anchor-4" "'mark' Mark Positioning in Latin lookup 2 subtable" "Anchor-5" "'mark' Mark Positioning in Latin lookup 2 subtable" "Anchor-6" "'mkmk' Mark to Mark in Latin lookup 3 subtable" "Anchor-7" "'mkmk' Mark to Mark in Latin lookup 4 subtable" "Anchor-8" "'mkmk' Mark to Mark in Latin lookup 5 subtable"
-BeginChars: 1114260 1502
+BeginChars: 1114260 1507
 
 StartChar: .notdef
 Encoding: 1114112 -1 0
@@ -49274,6 +49274,131 @@ SplineSet
  227 470 180 456 136 423 c 1
  96 477 l 1
  144 517 214 538 278 538 c 0
+EndSplineSet
+EndChar
+
+StartChar: union
+Encoding: 8746 8746 1502
+Width: 600
+Flags: HW
+HStem: 42 72<258 342>
+VStem: 74 72<268 574 205 574> 454 72<268 574 226 574>
+LayerCount: 2
+Fore
+SplineSet
+300 42 m 0
+ 425 42 526 142 526 268 c 2
+ 526 574 l 1
+ 454 574 l 1
+ 454 268 l 2
+ 454 184 384 114 300 114 c 0
+ 216 114 146 184 146 268 c 2
+ 146 574 l 1
+ 74 574 l 1
+ 74 268 l 2
+ 74 142 175 42 300 42 c 0
+EndSplineSet
+EndChar
+
+StartChar: propersubset
+Encoding: 8834 8834 1503
+Width: 600
+Flags: HW
+HStem: 652 72<258 342>
+VStem: 74 72<192 498 192 561> 454 72<192 498 192 540>
+LayerCount: 2
+Fore
+SplineSet
+34 308 m 0
+ 34 433 134 534 260 534 c 2
+ 566 534 l 1
+ 566 462 l 1
+ 260 462 l 2
+ 176 462 106 392 106 308 c 0
+ 106 224 176 154 260 154 c 2
+ 566 154 l 1
+ 566 82 l 1
+ 260 82 l 2
+ 134 82 34 183 34 308 c 0
+EndSplineSet
+EndChar
+
+StartChar: propersuperset
+Encoding: 8835 8835 1504
+Width: 600
+Flags: HW
+HStem: 652 72<258 342>
+VStem: 454 72<192 498 192 561> 74 72<192 498 192 540>
+LayerCount: 2
+Fore
+SplineSet
+566 308 m 0
+ 566 433 466 534 340 534 c 2
+ 34 534 l 1
+ 34 462 l 1
+ 340 462 l 2
+ 424 462 494 392 494 308 c 0
+ 494 224 424 154 340 154 c 2
+ 34 154 l 1
+ 34 82 l 1
+ 340 82 l 2
+ 466 82 566 183 566 308 c 0
+EndSplineSet
+EndChar
+
+StartChar: reflexsubset
+Encoding: 8838 8838 1505
+Width: 600
+Flags: HW
+HStem: 652 72<258 342>
+VStem: 74 72<192 498 192 561> 454 72<192 498 192 540>
+LayerCount: 2
+Fore
+SplineSet
+74 -39 m 9
+ 569 -39 l 1
+ 569 35 l 5
+ 74 35 l 1
+ 74 -39 l 9
+34 308 m 0
+ 34 433 134 534 260 534 c 2
+ 566 534 l 1
+ 566 462 l 1
+ 260 462 l 2
+ 176 462 106 392 106 308 c 0
+ 106 224 176 154 260 154 c 2
+ 566 154 l 1
+ 566 82 l 1
+ 260 82 l 2
+ 134 82 34 183 34 308 c 0
+EndSplineSet
+EndChar
+
+StartChar: reflexsuperset
+Encoding: 8839 8839 1506
+Width: 600
+Flags: HW
+HStem: 652 72<261 345>
+VStem: 457 72<192 498 192 561> 77 72<192 498 192 540>
+LayerCount: 2
+Fore
+SplineSet
+529 -22 m 13
+ 34 -24 l 1
+ 34 48 l 1
+ 529 50 l 5
+ 529 -22 l 13
+569 308 m 0
+ 569 433 469 534 343 534 c 2
+ 37 534 l 1
+ 37 462 l 1
+ 343 462 l 2
+ 427 462 497 392 497 308 c 0
+ 497 224 427 154 343 154 c 2
+ 37 154 l 1
+ 37 82 l 1
+ 343 82 l 2
+ 469 82 569 183 569 308 c 0
 EndSplineSet
 EndChar
 EndChars
