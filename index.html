@@ -29,7 +29,7 @@ textarea {
     resize:none;
     border:none;
     padding:1em;
-    margin-top:1em;
+    margin-bottom:1em;
 }
 
 table {
@@ -40,19 +40,31 @@ table {
 
 td { padding:5px; }
 
-#spash {
-    font-size:52pt;
-    font-family:Fira Logic;
+.labeled {
+    position: relative;
 }
+
+.labeled > span:first-child {
+    font-size:10px;
+    position:absolute;
+    top:2px;
+    left:2px;
+}
+
 
 .demo { font-family:Fira Logic; }
 
 .mirror { font-family:Fira Mono; }
 
+#splash {
+    font-size:52pt;
+    font-family:Fira Logic;
+}
+
     </style>
 </head>
 <body>
-    <span id="spash">Fira Logic</span>
+    <span id="splash">Fira Logic</span>
     <p>A FOSS font for nice-looking logical notation. Based on Fira Mono. Goes nicely with Fira Sans.</p>
     <p>A few handy ligatures:</p>
     <table>
@@ -105,8 +117,16 @@ td { padding:5px; }
         </tr>
     </table>
     <p>Voilà:</p>
-    <div><textarea id="mirrorarea" class="mirror">∀x(x=y<->∀z(z∈y<->z∈y))</textarea></div>
-    <div><textarea id="demoarea" class="demo">∀x(x=y<->∀z(z∈y<->z∈y))</textarea></div>
+    <div class="labeled">
+        <span >
+            Fira Mono
+        </span>
+        <textarea id="mirrorarea" class="mirror">∀x(x=y<->∀z(z∈y<->z∈y))</textarea>
+    </div>
+    <div class="labeled">
+        <span>Fira Logic</span>
+        <textarea id="demoarea" class="demo">∀x(x=y<->∀z(z∈y<->z∈y))</textarea>
+    </div>
 </body>
 <script charset="utf-8">
     function mirror(e1,e2) {
