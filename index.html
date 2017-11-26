@@ -1,3 +1,4 @@
+<html>
 <head>
     <meta charset="utf-8">
     <title>Fira Logic</title>
@@ -11,8 +12,12 @@
 
 body {
     text-rendering:optimizeLegibility;
-    padding:50pt;
+    padding:5pt;
     font-family:Fira Sans;
+    max-width:600px;
+    min-width:410px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 textarea {
@@ -37,6 +42,7 @@ td { padding:5px; }
 
 #spash {
     font-size:52pt;
+    font-family:Fira Logic;
 }
 
 .demo { font-family:Fira Logic; }
@@ -44,67 +50,73 @@ td { padding:5px; }
 .mirror { font-family:Fira Mono; }
 
     </style>
-    <body>
-        <span id="spash">Fira Logic</span>
-        <p>A FOSS font for nice-looking logical notation. Based on Fira Mono. Goes nicely with Fira Sans.</p>
-        <p>A few handy ligatures:</p>
-        <table>
-            <tr class="mirror">
-                <td>|-</td>
-                <td>|=</td>
-                <td>[]</td>
-                <td><></td>
-                <td>/\</td>
-                <td>\/</td>
-                <td>-></td>
-                <td><-></td>
-                <td><-</td>
-                <td>=></td>
-                <td><=></td>
-                <td><=</td>
-            </tr>
-            <tr class="demo">
-                <td>|-</td>
-                <td>|=</td>
-                <td>[]</td>
-                <td><></td>
-                <td>/\</td>
-                <td>\/</td>
-                <td>-></td>
-                <td><-></td>
-                <td><-</td>
-                <td>=></td>
-                <td><=></td>
-                <td><=</td>
-            </tr>
-        </table>
-        <p>And a few extra unicode glyphs:</p>
-        <table>
-            <tr class="demo">
-                <td>∀</td>
-                <td>∃</td>
-                <td>∈</td>
-                <td>⊂</td>
-                <td>⊃</td>
-                <td>⊆</td>
-                <td>⊇</td>
-                <td>∅</td>
-                <td>∩</td>
-            </tr>
-        </table>
-        <p>Voilà:</p>
-        <div><textarea class="mirror">∀x(x=y<->∀z(z∈y<->z∈y))</textarea></div>
-        <div><textarea class="demo">∀x(x=y<->∀z(z∈y<->z∈y))</textarea></div>
-    </body>
-    <script charset="utf-8">
-        function mirror(e1,e2) {
-            e1.addEventListener("keyup",function(){
-                e2.value = e1.value;
-                });
-        };
-        var marea = document.getElementById("mirrorarea");
-        var darea = document.getElementById("demoarea");
-        mirror(marea,darea);
-        mirror(darea,marea);
-    </script>
 </head>
+<body>
+    <span id="spash">Fira Logic</span>
+    <p>A FOSS font for nice-looking logical notation. Based on Fira Mono. Goes nicely with Fira Sans.</p>
+    <p>A few handy ligatures:</p>
+    <table>
+        <tr class="mirror">
+            <td>|-</td>
+            <td>|=</td>
+            <td>[]</td>
+            <td><></td>
+            <td>/\</td>
+            <td>\/</td>
+            <td>-></td>
+            <td><-></td>
+            <td><-</td>
+            <td>=></td>
+            <td><=></td>
+            <td><=</td>
+        </tr>
+        <tr class="demo">
+            <td>|-</td>
+            <td>|=</td>
+            <td>[]</td>
+            <td><></td>
+            <td>/\</td>
+            <td>\/</td>
+            <td>-></td>
+            <td><-></td>
+            <td><-</td>
+            <td>=></td>
+            <td><=></td>
+            <td><=</td>
+        </tr>
+    </table>
+    <p>And a few extra unicode glyphs:</p>
+    <table>
+        <tr class="demo">
+            <td>∀</td>
+            <td>∃</td>
+            <td>∈</td>
+            <td>⊂</td>
+            <td>⊃</td>
+            <td>⊆</td>
+            <td>⊇</td>
+            <td>∅</td>
+        </tr>
+        <tr class="demo">
+            <td>∩</td>
+            <td>∪</td>
+            <td>⋂</td>
+            <td>⋃</td>
+        </tr>
+    </table>
+    <p>Voilà:</p>
+    <div><textarea class="mirror">∀x(x=y<->∀z(z∈y<->z∈y))</textarea></div>
+    <div><textarea class="demo">∀x(x=y<->∀z(z∈y<->z∈y))</textarea></div>
+</body>
+<script charset="utf-8">
+    function mirror(e1,e2) {
+        e1.addEventListener("keyup",function(){
+            e2.value = e1.value;
+            });
+    };
+    var marea = document.getElementById("mirrorarea");
+    var darea = document.getElementById("demoarea");
+    mirror(marea,darea);
+    mirror(darea,marea);
+</script>
+</html>
