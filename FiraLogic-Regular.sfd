@@ -22,7 +22,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1441835615
-ModificationTime: 1543527325
+ModificationTime: 1559419873
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -89,7 +89,7 @@ Lookup: 5 0 0 "Contextual Substitution Arrows" { "Contextual Substitution bbleft
 Lookup: 5 0 0 "Contextual Substitution Turnstiles" { "Contextual Substitution implies"  "Contextual Substitution models"  } ['calt' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AFK ' 'AZE ' 'CAT ' 'CRT ' 'KAZ ' 'MOL ' 'PLK ' 'ROM ' 'TAT ' 'TRK ' 'dflt' > ) ]
 Lookup: 5 0 0 "Contextual Substitution Modality" { "Contextual Substitution necessary"  "Contextual Substitution possible"  } ['calt' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AFK ' 'AZE ' 'CAT ' 'CRT ' 'KAZ ' 'MOL ' 'PLK ' 'ROM ' 'TAT ' 'TRK ' 'dflt' > ) ]
 Lookup: 5 0 0 "Contextual Substitution Junctions" { "Contextual Substitution disjunction"  "Contextual Substitution conjunction"  } ['calt' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AFK ' 'AZE ' 'CAT ' 'CRT ' 'KAZ ' 'MOL ' 'PLK ' 'ROM ' 'TAT ' 'TRK ' 'dflt' > ) ]
-Lookup: 5 0 0 "Contextual Substitution Proof" { "Contextual Substitution Proof-1"  } ['calt' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AFK ' 'AZE ' 'CAT ' 'CRT ' 'KAZ ' 'MOL ' 'PLK ' 'ROM ' 'TAT ' 'TRK ' 'dflt' > ) ]
+Lookup: 5 0 0 "Contextual Substitution Proof" { "Contextual Substitution Proof-1"  "Contextual Substitution Proof-2"  } ['calt' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'AFK ' 'AZE ' 'CAT ' 'CRT ' 'KAZ ' 'MOL ' 'PLK ' 'ROM ' 'TAT ' 'TRK ' 'dflt' > ) ]
 Lookup: 4 0 0 "Ligature Substitution lookup 28" { "Ligature Substitution lookup 28 subtable"  } []
 Lookup: 1 0 0 "Single Substitution lookup 29" { "Single Substitution lookup 29 subtable"  } []
 Lookup: 1 0 0 "Single Substitution bbleftarrow" { "Single Substitution bbleftarrow-1"  } []
@@ -105,6 +105,7 @@ Lookup: 1 0 0 "Single Substitution necessary" { "Single Substitution necessary-1
 Lookup: 1 0 0 "Single Substitution conjunction" { "Single Substitution conjunction-1"  } []
 Lookup: 1 0 0 "Single Substitution disjunction" { "Single Substitution disjunction-1"  } []
 Lookup: 1 0 0 "Single Substitution Proof Elbow" { "Single Substitution Proof Elbow-1"  } []
+Lookup: 1 0 0 "Single Substitution Overelbow" { "Single Substitution Overelbow-1"  } []
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin lookup 0" { "'mark' Mark Positioning in Latin lookup 0 subtable"  } ['mark' ('DFLT' <'dflt' > 'latn' <'AFK ' 'AZE ' 'CAT ' 'CRT ' 'KAZ ' 'MOL ' 'PLK ' 'ROM ' 'TAT ' 'TRK ' 'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin lookup 1" { "'mark' Mark Positioning in Latin lookup 1 subtable"  } ['mark' ('DFLT' <'dflt' > 'latn' <'AFK ' 'AZE ' 'CAT ' 'CRT ' 'KAZ ' 'MOL ' 'PLK ' 'ROM ' 'TAT ' 'TRK ' 'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin lookup 2" { "'mark' Mark Positioning in Latin lookup 2 subtable"  } ['mark' ('DFLT' <'dflt' > 'latn' <'AFK ' 'AZE ' 'CAT ' 'CRT ' 'KAZ ' 'MOL ' 'PLK ' 'ROM ' 'TAT ' 'TRK ' 'dflt' > ) ]
@@ -115,6 +116,14 @@ MarkAttachClasses: 3
 "MarkClass-1" 125 acutecomb uni0306 uni030C uni0302 uni0313 uni0314 uni030F uni0308 uni0307 gravecomb uni030B uni0304 uni030A tildecomb uni0342
 "MarkClass-2" 36 uni0327 uni0326 uni0326.case uni0345
 DEI: 91125
+ContextSub2: coverage "Contextual Substitution Proof-2" 0 0 0 1
+ 2 0 0
+  Coverage: 7 uni2502
+  Coverage: 7 uni203E
+ 2
+  SeqLookup: 0 "Single Substitution Overelbow"
+  SeqLookup: 1 "Single Substitution Overelbow"
+EndFPST
 ContextSub2: coverage "Contextual Substitution Proof-1" 0 0 0 1
  2 0 0
   Coverage: 7 uni2502
@@ -318,7 +327,7 @@ NameList: AGL For New Fonts
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 1113952 28 12
+WinInfo: 8680 14 12
 BeginPrivate: 10
 BlueValues 31 [-13 0 527 540 689 702 739 752]
 OtherBlues 11 [-213 -200]
@@ -332,7 +341,7 @@ StemSnapH 4 [69]
 StemSnapV 4 [84]
 EndPrivate
 AnchorClass2: "Anchor-0" "'mark' Mark Positioning in Latin lookup 0 subtable" "Anchor-1" "'mark' Mark Positioning in Latin lookup 0 subtable" "Anchor-2" "'mark' Mark Positioning in Latin lookup 1 subtable" "Anchor-3" "'mark' Mark Positioning in Latin lookup 1 subtable" "Anchor-4" "'mark' Mark Positioning in Latin lookup 2 subtable" "Anchor-5" "'mark' Mark Positioning in Latin lookup 2 subtable" "Anchor-6" "'mkmk' Mark to Mark in Latin lookup 3 subtable" "Anchor-7" "'mkmk' Mark to Mark in Latin lookup 4 subtable" "Anchor-8" "'mkmk' Mark to Mark in Latin lookup 5 subtable"
-BeginChars: 1114261 1512
+BeginChars: 1114262 1516
 
 StartChar: .notdef
 Encoding: 1114112 -1 0
@@ -41979,12 +41988,13 @@ VStem: 260 80<-500 1000 -500 1000>
 LayerCount: 2
 Fore
 SplineSet
-340 1000 m 1
- 340 -200 l 1
- 260 -200 l 1
- 260 1000 l 1
- 340 1000 l 1
+340 1000 m 5
+ 340 -200 l 5
+ 260 -200 l 5
+ 260 1000 l 5
+ 340 1000 l 5
 EndSplineSet
+Substitution2: "Single Substitution Overelbow-1" LIG
 Substitution2: "Single Substitution Proof Elbow-1" LIG
 EndChar
 
@@ -49552,18 +49562,94 @@ StartChar: subproofelbow.ligature
 Encoding: 1114260 -1 1511
 Width: 600
 Flags: W
+HStem: -182 74<-260 600>
+VStem: -340 80<-108 1000>
 LayerCount: 2
 Fore
 SplineSet
--263 -182 m 1
- 600 -182 l 1
+-340 -182 m 1
+ -340 1000 l 1
+ -260 1000 l 1
+ -260 -108 l 1
  600 -108 l 1
- -263 -108 l 1
- -263 1000 l 1
- -338 1000 l 1
- -338 -108 l 1
- -338 -182 l 1
- -263 -182 l 1
+ 600 -182 l 1
+ -340 -182 l 1
+EndSplineSet
+EndChar
+
+StartChar: uni203E
+Encoding: 8254 8254 1512
+Width: 600
+Flags: W
+HStem: 926 74<0 600>
+LayerCount: 2
+Fore
+SplineSet
+0 926 m 5
+ 0 1000 l 5
+ 600 1000 l 5
+ 600 926 l 5
+ 0 926 l 5
+EndSplineSet
+Substitution2: "Single Substitution Overelbow-1" overelbow.ligature
+EndChar
+
+StartChar: overelbow.ligature
+Encoding: 1114261 -1 1513
+Width: 600
+Flags: W
+HStem: -200 21G<-340 -260> 926 74<-260 600>
+VStem: -340 80<-200 926>
+LayerCount: 2
+Fore
+SplineSet
+-340 1000 m 1
+ -260 1000 l 1
+ 600 1000 l 1
+ 600 926 l 1
+ -260 926 l 1
+ -260 -200 l 1
+ -340 -200 l 1
+ -340 926 l 1
+ -340 1000 l 1
+EndSplineSet
+EndChar
+
+StartChar: logicaland
+Encoding: 8743 8743 1514
+Width: 600
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+300 511.553710938 m 5
+ 504 47 l 5
+ 569 83 l 5
+ 344 589 l 5
+ 300 589 l 5
+ 256 589 l 5
+ 31 83 l 5
+ 96 47 l 5
+ 300 511.553710938 l 5
+EndSplineSet
+EndChar
+
+StartChar: logicalor
+Encoding: 8744 8744 1515
+Width: 600
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+300 124.446289062 m 5
+ 504 589 l 5
+ 569 553 l 5
+ 344 47 l 5
+ 300 47 l 5
+ 256 47 l 5
+ 31 553 l 5
+ 96 589 l 5
+ 300 124.446289062 l 5
 EndSplineSet
 EndChar
 EndChars
