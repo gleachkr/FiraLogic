@@ -1,4 +1,4 @@
-SplineFontDB: 3.0
+SplineFontDB: 3.2
 FontName: FiraLogic-Regular
 FullName: Fira Logic Regular
 FamilyName: Fira Logic
@@ -22,7 +22,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1441835615
-ModificationTime: 1559419873
+ModificationTime: 1590515671
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -327,7 +327,7 @@ NameList: AGL For New Fonts
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 8680 14 12
+WinInfo: 8262 51 20
 BeginPrivate: 10
 BlueValues 31 [-13 0 527 540 689 702 739 752]
 OtherBlues 11 [-213 -200]
@@ -341,7 +341,7 @@ StemSnapH 4 [69]
 StemSnapV 4 [84]
 EndPrivate
 AnchorClass2: "Anchor-0" "'mark' Mark Positioning in Latin lookup 0 subtable" "Anchor-1" "'mark' Mark Positioning in Latin lookup 0 subtable" "Anchor-2" "'mark' Mark Positioning in Latin lookup 1 subtable" "Anchor-3" "'mark' Mark Positioning in Latin lookup 1 subtable" "Anchor-4" "'mark' Mark Positioning in Latin lookup 2 subtable" "Anchor-5" "'mark' Mark Positioning in Latin lookup 2 subtable" "Anchor-6" "'mkmk' Mark to Mark in Latin lookup 3 subtable" "Anchor-7" "'mkmk' Mark to Mark in Latin lookup 4 subtable" "Anchor-8" "'mkmk' Mark to Mark in Latin lookup 5 subtable"
-BeginChars: 1114262 1516
+BeginChars: 1114262 1517
 
 StartChar: .notdef
 Encoding: 1114112 -1 0
@@ -37469,23 +37469,23 @@ StartChar: intersection
 Encoding: 8745 8745 1090
 Width: 600
 GlyphClass: 2
-Flags: HMW
-HStem: 502 72<258 342>
-VStem: 74 72<42 348 42 411> 454 72<42 348 42 390>
+Flags: W
+HStem: 0 21G<74 146 454 526> 457 72<223.016 376.984>
+VStem: 74 72<0 379.186> 454 72<0 379.186>
 LayerCount: 2
 Fore
 SplineSet
-300 529 m 4
- 425 529 526 428.995117188 526 303 c 6
+300 529 m 0
+ 425 529 526 428.995117188 526 303 c 2
  526 0 l 1
  454 0 l 1
- 454 303 l 6
- 454 386.997070312 384 457 300 457 c 4
- 216 457 146 386.997070312 146 303 c 6
+ 454 303 l 2
+ 454 386.997070312 384 457 300 457 c 0
+ 216 457 146 386.997070312 146 303 c 2
  146 0 l 1
  74 0 l 1
- 74 303 l 6
- 74 428.995117188 175 529 300 529 c 4
+ 74 303 l 2
+ 74 428.995117188 175 529 300 529 c 0
 EndSplineSet
 EndChar
 
@@ -49650,6 +49650,31 @@ SplineSet
  31 553 l 5
  96 589 l 5
  300 124.446289062 l 5
+EndSplineSet
+EndChar
+
+StartChar: uni2129
+Encoding: 8489 8489 1516
+Width: 600
+Flags: MW
+HStem: 468 70<164 199.5> 0 72<345 513 261 522>
+VStem: 261 84<72 387 72 72>
+AnchorPoint: "Anchor-3" 301 0 basechar 0
+AnchorPoint: "Anchor-2" 285 527 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+345 72 m 1
+ 522 72 l 1
+ 513 0 l 1
+ 261 0 l 1
+ 261 397 l 2
+ 261 449 225 468 174 468 c 0
+ 146 468 114 461 85 450 c 1
+ 63 511 l 1
+ 87 525 140 538 188 538 c 0
+ 283 538 345 483 345 387 c 2
+ 345 72 l 1
 EndSplineSet
 EndChar
 EndChars
